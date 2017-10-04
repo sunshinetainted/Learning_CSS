@@ -5,66 +5,175 @@
     <meta charset="utf-8">
     <style>
       /* GLOBAL STYLES */
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 7vw;
+        margin-top: 0;
+      }
       a {
-        color: rgba(255, 204, 255, 0.2);
+        color: #f00;
+      }
+
+      /* HERO STYLES */
+      .full-hero {
+        background-color: #c7dbfc;
+        height: 50vh;
       }
 
       /* SOCIAL STYLES */
       .social-link {
         background: rgba(150, 150, 150, 0.5);
-        color: rgba(0, 0, 255, 0.2);
+        border-radius: 99px;
+        box-sizing: border-box;
+        color: #fff;
+        display: inline-block;
+        font-family: helvetica, arial, sans;
+        font-size: 1rem;
+        font-weight: bold;
+        height: 2.5em;
+        line-height: 1;
+        padding-top: 0.85em;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        width: 2.5em;
+
+      }
+      .social-list {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      .social-list > li {
+        display: inline-block;
+        margin: 0 0.5em;
+
       }
 
       /*BIO STYLES */
+      .bio-wrapper {
+        font-size: 24px;
+        margin: auto;
+        max-width: 960px;
+        overflow: hidden;
+      }
       .bio-box {
         border: 1px solid #000;
+        border-color: rgba(0, 0, 0, 0) black black transparent;
+        box-sizing: border-box;
+        float: left;
+        font-size: 1rem;
+        margin: 40px 1% 0;
+        padding: 0 2% 2%;
+        width: 23%;
+      }
+      .bio-box h3 {
+        color: #fff;
+        font-size: 1.5em;
+        margin: -40px 0 1em;
+        text-align: center;
+      }
+      .bio-box img {
+          width: 100%;
+      }
+      /*.bio-box > a {
+        color: #c68bf9;
+      }*/
+      .bio-copy {
+        font-size: 1em;
+        line-height: 1.5;
       }
       .bio-copy a {
-        color: rgba(0, 128, 0, 0.2);
+        color: green;
+
       }
     </style>
   </head>
   <body>
-    <h1>I'm an h1</h1>
-    <ul>
-      <li>
-        <a href="http://example.com/" class="social-link">Link</a>
-      </li>
-      <li>
-        <a href="http://example.com/" class="social-link">Link</a>
-      </li>
-      <li>
-        <a href="http://example.com/" class="social-link">Link</a>
-      </li>
-    </ul>
+    <div class="full-hero hero-home">
+      <h1>I'm an h1</h1>
+      <ul class="social-list">
+        <li>
+          <a href="http://example.com/" class="social-link">Fb</a>
+        </li>
+        <li>
+          <a href="http://example.com/" class="social-link">Tw</a>
+        </li>
+        <li>
+          <a href="http://example.com/" class="social-link">ins</a>
+        </li>
+      </ul>
+    </div>
     <h2>I'm an h2</h2>
-    <div class="bio-box">
-      <h3>Prashansa Poddar</h3>
-      <a href="https://www.urbanmishmash.com/paris" class="social-link">here</a>
-      <div class="bio-copy">
+    <div class="bio-wrapper">
+      <div class="bio-box">
+        <img src="http://placekitten.com/g/400/400">
+        <h3>Prashansa Poddar</h3>
+        <a href="https://www.urbanmishmash.com/paris" class="social-link">here</a>
+        <div class="bio-copy">
+          <p>
+            Prashansa Poddar is the founder and editor of a Paris based art and cultural publication <a href="https://www.urbanmishamsh.com/paris"><em>Urban Mishmash</em></a>. Urban Mishmash aims to provide an alternate real insight into the world of Parisians for expats living in the French capital. You can find a curated selection of Paris exhibitions, art and cultural events, concerts, shows and other great things to do on <a href="https://www.urbanmishamsh.com/paris"><em>Urban Mishmash</em></a>.
+          </p>
+        </div>
+      </div>
+      <div class="bio-box">
+        <img src="http://placekitten.com/g/400/400">
+        <h3>Urban Mishmash</h3>
+        Follow us on Twitter <a href="https://twitter.com/urbanmishmash" class="social-link show">here</a>
+        <div class="bio-copy">
+          <p>
+            Discover the best things to do in Paris: <a href="https://www.urbanmishmash.com/paris/art-culture/exhibitions/">art exhibitions</a>, <a href="https://www.urbanmishmash.com/paris/events-paris-this-month/">events</a>, culture, concerts, secret places and more.
+          </p>
+        </div>
+      </div>
+      <div class="bio-box">
+        <img src="http://placekitten.com/g/400/400">
+        <h3>Punchify.Me</h3>
+        <a href="http://punchify.me/" class="social-link">here</a>
+        <div class="bio-copy">
+          <p>
+            AGENCE INBOUND MARKETING ET SEO A PARIS: <a href="http://punchify.me/">PUNCHIFY.ME</a>, tout comme les autres agences d'Inbound Marketing à Paris et en France, vous aide à RENTABILISER VOS INVESTISSEMENT WEB. Grâce à nos stratégies de contenu efficaces, les campagnes de netlinking et de SEO White Hat, l'étude et la compréhension du comportement de vos visiteurs et l'implémentation de campagne webmarketing efficace, Punchify.Me Agence Inbound Marketing, vous permet de booster votre revenu et de devenir rentable !
+            Choisir une agence Inbound Marketing vous permet de vous concentrer sur les tâches les plus importantes de votre métier. Votre métier n'est pas de gérer votre contenu ou votre SEO ! C'est le métier de Punchify.Me, notre agence d'Inbound Marketing à Paris.
+          </p>
+        </div>
+      </div>
+      <div class="bio-box">
+        <img src="http://placekitten.com/g/400/400">
+        <h3>??</h3>
         <p>
-          Prashansa Poddar is the founder and editor of a Paris based art and cultural publication <a href="https://www.urbanmishamsh.com/paris"><em>Urban Mishmash</em></a>. Urban Mishmash aims to provide an alternate real insight into the world of Parisians for expats living in the French capital. You can find a curated selection of Paris exhibitions, art and cultural events, concerts, shows and other great things to do on <a href="https://www.urbanmishamsh.com/paris"><em>Urban Mishmash</em></a>.
+          The future
         </p>
       </div>
     </div>
-    <div class="bio-box">
-      <h3>Urban Mishmash</h3>
-      Follow us on Twitter <a href="https://twitter.com/urbanmishmash" class="social-link">here</a>
-      <div class="bio-copy">
-        <p>
-          Discover the best things to do in Paris: <a href="https://www.urbanmishmash.com/paris/art-culture/exhibitions/">art exhibitions</a>, <a href="https://www.urbanmishmash.com/paris/events-paris-this-month/">events</a>, culture, concerts, secret places and more.
-        </p>
-      </div>
-    </div>
-    <div class="bio-box">
-      <h3>Punchify.Me</h3>
-      <a href="http://punchify.me/" class="social-link">here</a>
-      <div class="bio-copy">
-        <p>
-          AGENCE INBOUND MARKETING ET SEO A PARIS: <a href="http://punchify.me/">PUNCHIFY.ME</a>, tout comme les autres agences d'Inbound Marketing à Paris et en France, vous aide à RENTABILISER VOS INVESTISSEMENT WEB. Grâce à nos stratégies de contenu efficaces, les campagnes de netlinking et de SEO White Hat, l'étude et la compréhension du comportement de vos visiteurs et l'implémentation de campagne webmarketing efficace, Punchify.Me Agence Inbound Marketing, vous permet de booster votre revenu et de devenir rentable !
-          Choisir une agence Inbound Marketing vous permet de vous concentrer sur les tâches les plus importantes de votre métier. Votre métier n'est pas de gérer votre contenu ou votre SEO ! C'est le métier de Punchify.Me, notre agence d'Inbound Marketing à Paris.
-        </p>
-      </div>
-    </div>
+    <p>
+    Learn Enough to Be Dangerous is a leader in the movement to teach the
+    world <em>technical sophistication</em>, which includes both "hard
+    skills" like coding, command lines, and version control, and "soft
+     skills" like guessing keyboard shortcuts, Googling error messages, and
+    knowing when to just reboot the darn thing.
+  </p>
+  <p>
+    We believe there are <strong>at least a billion people</strong> who can
+    benefit from learning technical sophistication, probably more. To join
+    our movement,
+    <a href="https://learnenough.com/#email_list">sign up for our official
+    email list</a> now.
+  </p>
+  <h3>Background</h3>
+  <p>
+    Learn Enough to Be Dangerous is an outgrowth of the
+    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a> and the
+    <a href="http://www.softcover.io/">Softcover publishing platform</a>.
+    This page is part of the sample site for
+    <a href="https://learnenough.com/css-tutorial"><em>Learn Enough CSS and
+    Layout to Be Dangerous</em></a>, which teaches the basics of
+    <strong>C</strong>ascading <strong>S</strong>tyle
+    <strong>S</strong>heets, the language that allows web pages to be styled.
+    Other related tutorials can be found at
+    <a href="https://learnenough.com/">learnenough.com</a>.
+  </p>
   </body>
 </html>
